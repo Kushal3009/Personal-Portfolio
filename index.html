@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushal Padhiyar Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/type.js/2.1.0/type.min.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background-color: #f3f4f6;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #6EE7B7 0%, #3B82F6 100%);
+        }
+
+        .btn-primary {
+            background-color: #3B82F6;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #2563EB;
+        }
+
+        /* Hide the mobile menu by default */
+        .mobile-menu {
+            display: none;
+        }
+
+        /* Show mobile menu when toggle is active */
+        .mobile-menu.active {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50 py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-blue-600">Kushal Padhiyar</h1>
+            <div class="hidden md:block space-x-4">
+                <a href="#about" class="text-lg hover:text-blue-600 transition duration-300">About</a>
+                <a href="#experience" class="text-lg hover:text-blue-600 transition duration-300">Experience</a>
+                <a href="#projects" class="text-lg hover:text-blue-600 transition duration-300">Projects</a>
+                <a href="#skills" class="text-lg hover:text-blue-600 transition duration-300">Skills</a>
+                <a href="#education" class="text-lg hover:text-blue-600 transition duration-300">Education</a>
+                <a href="#contact" class="text-lg hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <!-- Hamburger menu for mobile -->
+            <button class="block md:hidden text-blue-600" id="menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white px-4 py-2">
+            <a href="#about" class="block py-2 text-lg hover:text-blue-600 transition duration-300">About</a>
+            <a href="#experience" class="block py-2 text-lg hover:text-blue-600 transition duration-300">Experience</a>
+            <a href="#projects" class="block py-2 text-lg hover:text-blue-600 transition duration-300">Projects</a>
+            <a href="#skills" class="block py-2 text-lg hover:text-blue-600 transition duration-300">Skills</a>
+            <a href="#education" class="block py-2 text-lg hover:text-blue-600 transition duration-300">Education</a>
+            <a href="#contact" class="block py-2 text-lg hover:text-blue-600 transition duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home"
+        class="h-screen w-full flex items-center justify-center bg-gradient-to-br from-green-400 to-blue-500 text-white px-4 md:px-24">
+        <div class="container flex flex-col lg:flex-row items-center justify-center">
+            <div class="text-center lg:w-1/2 lg:text-left">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-800">👋 Hey There..!</h1>
+                <h2 class="text-2xl md:text-4xl font-semibold text-gray-700 mt-2">Kushal Padhiyar</h2>
+                <h1 class="text-3xl md:text-5xl font-bold mt-4">Hi, I'm <span id="typed"></span></h1>
+                <script>
+                    var typed = new Typed("#typed", {
+                        strings: [
+                            "Kushal Padhiyar",
+                            "Backend Developer",
+                            "Full-Stack Enthusiast",
+                            "Python Developer",
+                            "Node.js Developer",
+                            "MERN Stack Developer",
+                            "AI/ML Enthusiast",
+                            "Data Science Enthusiast"
+                        ],
+                        typeSpeed: 50,
+                        backSpeed: 30,
+                        loop: true
+                    });
+                </script>
+                <div class="mt-6 space-x-4">
+                    <a href="#about"
+                        class="btn-primary py-2 px-4 rounded-full animate__animated animate__fadeInUp">Explore More</a>
+                    <a href="Kushal.pdf" download
+                        class="btn-primary py-2 px-4 rounded-full animate__animated animate__fadeInUp">Download
+                        Resume</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mt-8 lg:mt-0">
+                <img src="developer image.png" alt="Developer Image"
+                    class="rounded-lg shadow-none w-full h-auto max-w-xs lg:max-w-md mx-auto">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto p-8 my-20 w-full">
+        <h2 class="text-4xl font-bold text-center text-blue-600 animate__animated animate__fadeInLeft">About Me</h2>
+        <div class="flex justify-center mt-4">
+            <img src="kushal.jpeg" alt="Kushal Padhiyar"
+                class="rounded-full h-32 w-32 shadow-lg animate__animated animate__fadeInUp" />
+        </div>
+        <p class="mt-4 text-lg text-center text-gray-700 animate__animated animate__fadeInRight max-w-4xl mx-auto">
+            I am a passionate web developer specializing in creating dynamic and scalable web applications using
+            technologies such as Node.js, Express, and MySQL. My enthusiasm for web development drives me to explore new
+            technologies, particularly in AI and data science.
+        </p>
+        <p class="mt-4 text-lg text-center text-gray-700 animate__animated animate__fadeInRight max-w-4xl mx-auto">
+            I thrive on working with complex systems, from designing APIs to implementing database solutions.
+            With a strong foundation in full-stack development, I enjoy integrating captivating front-end designs with
+            efficient backend architectures.
+            I am excited about the potential of AI and machine learning to transform the web experience and am eager to
+            incorporate these innovations into my projects.
+        </p>
+        <div class="flex justify-center mt-8 space-x-6">
+            <a href="#experience" class="btn-primary py-2 px-4 rounded-full hover:shadow-lg">View Experience</a>
+            <a href="#projects" class="btn-primary py-2 px-4 rounded-full hover:shadow-lg">My Projects</a>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold animate__animated animate__fadeInLeft">Experience</h2>
+            <p class="mt-4 text-lg animate__animated animate__fadeInRight">Backend Developer Internship at SRKay
+                Consulting Group (Jan 2024–Apr 2024)</p>
+            <ul class="mt-6 text-left max-w-4xl mx-auto space-y-4">
+                <li class="bg-white text-gray-900 p-4 rounded-lg shadow-lg animate__animated animate__fadeInLeft">•
+                    Worked on building APIs, database integration, and user authentication for E-Commerce platforms.
+                </li>
+                <li class="bg-white text-gray-900 p-4 rounded-lg shadow-lg animate__animated animate__fadeInRight">•
+                    Implemented product search, add-to-cart, and secure checkout functionalities.</li>
+                <li class="bg-white text-gray-900 p-4 rounded-lg shadow-lg animate__animated animate__fadeInLeft">• Key
+                    technologies: Node.js, Express.js, MySQL, and API integration.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto p-8 my-20">
+        <h2 class="text-4xl font-bold text-center text-blue-600 animate__animated animate__fadeInLeft">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <!-- Project 1 -->
+            <div
+                class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transform transition duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <h3 class="text-2xl font-semibold text-blue-500">Digital Mart</h3>
+                <p class="mt-2 text-gray-600">A dynamic e-commerce platform with user/seller login, product management,
+                    and secure checkout.</p>
+                <p class="mt-2 text-sm text-gray-500">Tech Stack: Node.js, Express, MySQL, Bootstrap.</p>
+            </div>
+            <!-- Project 2 -->
+            <div
+                class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transform transition duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <h3 class="text-2xl font-semibold text-blue-500">Task Management Tool</h3>
+                <p class="mt-2 text-gray-600">A real-time task management app with user authentication and secure data
+                    persistence.</p>
+                <p class="mt-2 text-sm text-gray-500">Tech Stack: Node.js, MongoDB, React.js.</p>
+            </div>
+            <!-- Project 3 -->
+            <div
+                class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transform transition duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <h3 class="text-2xl font-semibold text-blue-500">AI Prompt Generator</h3>
+                <p class="mt-2 text-gray-600">A web application for generating AI responses based on user-provided
+                    prompts.</p>
+                <p class="mt-2 text-sm text-gray-500">Tech Stack: Node.js, React.js, Axios.</p>
+            </div>
+            <!-- Project 4 -->
+            <div
+                class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transform transition duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <h3 class="text-2xl font-semibold text-blue-500">Portfolio Website</h3>
+                <p class="mt-2 text-gray-600">A personal portfolio showcasing projects, skills, and experiences.</p>
+                <p class="mt-2 text-sm text-gray-500">Tech Stack: HTML, CSS, JavaScript, Tailwind CSS.</p>
+            </div>
+            <!-- Project 5 -->
+            <div
+                class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transform transition duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <h3 class="text-2xl font-semibold text-blue-500">Blog Website</h3>
+                <p class="mt-2 text-gray-600">A blog platform for sharing articles and tutorials on technology.</p>
+                <p class="mt-2 text-sm text-gray-500">Tech Stack: Node.js, Express, MongoDB, EJS.</p>
+            </div>
+            <!-- Project 6 -->
+            <div
+                class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transform transition duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <h3 class="text-2xl font-semibold text-blue-500">Chat Application</h3>
+                <p class="mt-2 text-gray-600">A real-time chat application with user authentication and message history.
+                </p>
+                <p class="mt-2 text-sm text-gray-500">Tech Stack: Node.js, Socket.io, MongoDB.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gradient-to-r from-green-400 to-blue-500 text-white">
+        <h2 class="text-4xl text-center font-bold animate__animated animate__fadeInLeft">Skills</h2>
+
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 mt-12">
+            <!-- Skill Item -->
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-python fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">Python</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-js-square fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">JavaScript</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-node fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">Node.js</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-c fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">C/C++</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-react fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">React.js</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <img src="https://static.djangoproject.com/img/logos/django-logo-negative.svg" alt="Flask"
+                    class="h-16 w-16 mb-2" />
+                <p class="mt-2 text-center text-blue-800 font-semibold">Django</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <img src="https://flask.palletsprojects.com/en/2.0.x/_static/flask-logo.png" alt="Flask"
+                    class="h-16 w-16 mb-2 text-center" />
+                <p class="mt-2 text-center text-blue-800 font-semibold">Flask</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <img src="https://www.mongodb.com/assets/images/global/favicon.ico" alt="Flask"
+                    class="h-16 w-16 mb-2" />
+                <p class="mt-2 text-center text-blue-800 font-semibold">MongoDB</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="Flask"
+                    class="h-16 w-16 mb-2" />
+                <p class="mt-2 text-center text-blue-800 font-semibold">MySQL</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-git fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">Git</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-github fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">GitHub</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-docker fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">Docker</p>
+            </div>
+            <div
+                class="flex flex-col items-center p-4 transition-transform transform hover:scale-105 rounded-lg shadow-lg">
+                <i class="fab fa-css3-alt fa-3x mb-2 text-blue-800"></i>
+                <p class="mt-2 text-center text-blue-800 font-semibold">Tailwind CSS</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto p-8 my-20">
+        <h2 class="text-4xl font-bold text-center text-blue-600 animate__animated animate__fadeInLeft">Education</h2>
+        <p class="mt-4 text-lg text-center text-gray-700 animate__animated animate__fadeInRight">Bachelor of Engineering
+            in Computer Science from Gujarat Technological University (2024)</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container w-full mx-auto p-8 my-20">
+        <h2 class="text-4xl font-bold text-center text-blue-600 animate__animated animate__fadeInLeft">Contact Me</h2>
+        <p class="mt-4 text-lg text-center text-gray-700">Feel free to reach out via the links below!</p>
+        <div class="flex flex-col md:flex-row justify-center mt-8 space-y-4 md:space-y-0 md:space-x-6">
+            <a href="https://www.linkedin.com/in/kushalpadhiyar/" target="_blank"
+                class="flex items-center btn-primary py-2 px-4 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out">
+                <i class="fab fa-linkedin fa-lg mr-2 text-blue-600"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Kushal3009" target="_blank"
+                class="flex items-center btn-primary py-2 px-4 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out">
+                <i class="fab fa-github fa-lg mr-2 text-blue-600"></i> GitHub
+            </a>
+            <a href="mailto:kushalpadhiyar030@gmail.com"
+                class="flex items-center btn-primary py-2 px-4 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out">
+                <i class="fas fa-envelope fa-lg mr-2 text-blue-600"></i> Email
+            </a>
+            <a href="tel:7802043261"
+                class="flex items-center btn-primary py-2 px-4 rounded-full hover:shadow-lg transition-all duration-300 ease-in-out">
+                <i class="fas fa-phone fa-lg mr-2 text-blue-600"></i> 7802043261
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Kushal Padhiyar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+
+</html>
